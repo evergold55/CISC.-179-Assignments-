@@ -4,13 +4,8 @@
 ### 1. Your first code
 
 a. Print the following statements using multiple ```print()``` statements 
-```
-All the world's a stage, 
-And all the men and women merely players: 
-They have their exits and their entrances; 
-And one man in his time plays many parts,
-His acts being seven ages.
-```
+
+https://github.com/evergold55/CISC.-179-Assignments-/blob/main/First%20Code.multi-statement.Golding.py
 
 b. Print the above statements using a single ```print()``` statement
 
