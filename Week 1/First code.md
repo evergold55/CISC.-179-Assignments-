@@ -15,6 +15,10 @@ print("His acts being seven ages.")
 
 b. Print the above statements using a single ```print()``` statement
 
+```python
+print("All the world's a stage,\nAnd all the men and women merely players:\nThey have their exits and their entrances;\nAnd one man in his time plays many parts,\nHis acts being seven ages.")
+```
+
 
 
 c. Without coding, what is the output of the following statement:
@@ -28,7 +32,8 @@ You'd want to use flush=True if you want to count to a certain number every seco
 You'd want to use flush=False if you wanted to see the entire output immediately.  
 
 e. By default, the ```flush``` is disabled but ```print()``` output behaves like ```flush=True```. Which argument triggers the flush?
- end
+ 
+ The argument "end" 
 
 ## Challenges
 
