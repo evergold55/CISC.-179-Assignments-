@@ -1,56 +1,56 @@
 # 1. Literals
-What will the output be without using Python? Aim for 80% accuracy.
 
-``` print(5 + 2 - 2)
-# 5
+``` python
+print(5 + 2 - 2)
+5
 print(5 / 2)
-# 2.5
+2.5
 print(6 // 2) # // integer division
-# 3
+3
 print(2. * 3)
-# 6.
+6.
 print(2 < 4)
-# false
+false
 print(2 >= 2)
-# True
+True
 print("Hello"+"World")
-# Hello World 
+HelloWorld 
 print("bla" * 3)
-# bla bla bla 
+blablabla 
 print(2 * 3 ** 3)
-# 54
+54
 print(5 * 25 // 13 + 100 / 2 % 13 // 2)
-# 3
+3
 print(2 * 3 % 5)
-# 1
+1
 print((2 % -4), (2 % 4), (2 ** 3 ** 2))
-#  2, 2, 64
+2, 2, 64
 ```
 
 
-# Data Type
+# 2. Data Type
 
-```
+```python
 type("Hello")
-# string
+string
 type(1+"2")
-# error
+error
 type(1.)
-# float
+float
 type('A')
-# string
+string
 type(500)
-# int
+int
 type(True)
-# boolean
+boolean
 type("False")
-# string
+string
 ```
 
-# Operator precedence
+# 3. Operator precedence
 
-```
-24%2+(1+2)+9**2
+```python
+24%2+(1+2)+9**2-2
 ```
 
 
