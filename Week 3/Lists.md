@@ -52,6 +52,11 @@ duplicates= list({item for item in my_list_ten_mem if my_list_ten_mem.count(item
 print(duplicates)
 ```
 e-f.) The memory addresses remained the same
-g.) You'd want to utilize a deep copy
+g.) You'd want to import and utilize a deep copy plug-in
+h.)Yes
+i.)```python
+spaces = ("To be, or not to be, this is the question")
+spaces = [char for char in spaces if char == " "]
+print(len(spaces))
 
 
