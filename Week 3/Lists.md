@@ -51,4 +51,7 @@ print(duplicates)
 duplicates= list({item for item in my_list_ten_mem if my_list_ten_mem.count(item)>1})
 print(duplicates)
 ```
+e-f.) The memory addresses remained the same
+g.) You'd want to utilize a deep copy
+
 
