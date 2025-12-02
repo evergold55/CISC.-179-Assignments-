@@ -110,13 +110,23 @@ print(d_copy)
 **2a.** Change the content of `d_copy` and make sure the content does not affect the `d_orig` dictionary. Verify using the code.
 
 ```
-# Write your code here
-```
+d_orig = {123: "Coconut"}
+d_copy = d_orig.copy()   
+
+d_copy[123] = "Mango"    
+
+print("Original:", d_orig)
+print("Copy:    ", d_copy)```
 
 **2b.** If it changes the content of the original dictionary, then propose how can you solve this problem.
 
-```
-# Write your code here
+```d_orig = {123: "Coconut"}
+d_copy = d_orig.copy()   
+
+d_copy[123] = "Mango"
+
+print("Original:", d_orig)
+print("Copy:", d_copy)
 ```
 
 **2c.** Write a code that generates the following error and explain why there is such an error.
@@ -126,7 +136,19 @@ TypeError: unhashable type: 'list'
 ```
 
 ```
-# Write your code here
+my_dict= {
+    "clouds": "white",
+    "sky": "blue",
+    "asphalt": "black",
+    "apple": "red",
+    "banana": "yellow",
+    "grape": "purple",
+    "grass": "green",
+    "snow": "white",
+    "lemon": "yellow",
+    ["coffee, chocolate, leather"]: "brown"
+}
+print(my_dict)
 ```
 
 ## Challenges
