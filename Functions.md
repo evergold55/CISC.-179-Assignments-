@@ -46,6 +46,23 @@ print(list_reverser())
 
 **1c.** What would be the result of changing a list or dictionary that was passed into a function as a parameter value? Which operations would be likely to create changes that would be visible outside the function? What steps might you take to minimize that risk?
 
+  Would this be an acceptable answer:It would change that list/dictionary inside and outside the function because list and dictionaries are mutable data types. List operations that are used to mutate the list such as 'remove' or 'append' will be visible outside the function and dictionary operations such as 'pop' will be visible outside the function. Avoiding mutating parameters or using immutable data types is the best way to avoid making any accidental changes.
+  ```python
+fruits = ["apple", "banana", "blueberry"]
+fruits_dict = {"apple":"red", "banana":"yellow", "blueberry":"blue"}
+
+def fresh_fruits():
+    print(fruits, fruits_dict)
+    fruits.append("apple")
+    fruits_dict["apple"] = "blue"
+    print(fruits, fruits_dict)
+"""result= ['apple', 'banana', 'blueberry'] {'apple': 'red', 'banana': 'yellow', 'blueberry': 'blue'}
+['apple', 'banana', 'blueberry', 'apple'] {'apple': 'blue', 'banana': 'yellow', 'blueberry': 'blue'}"""
+```
+
+
+
+
 Explain the above statements with the help of code.
 
 **1d.** Assuming that `x = 5`, what will be the value of `x` after `funct_1()` below executes? After `funct_2()` executes?
@@ -59,7 +76,8 @@ def funct_2():
   global x
   x=2
 ```
-x will be = 5
+x will be = 5 after executing funct_1 because x=3 is a local variable and x=2 after funct_2 because x=2 gets declared globally.
+
 ## 2. Troubleshooting
 
 Correct the following code. There might be more than one correct answers. Explain your reasoning.
@@ -69,6 +87,14 @@ def my_func(a,b,**c):
   print(c)
 
 my_func(1,2,3,4,5,6)
+
+result
+
+def my_func(a,b, **c):
+  print(c)
+
+my_func(1,2,c=3,d=4,e=5,f=6)
+print()
 ```
 
 Using the following code, x should print 100 but it prints 10, why?
@@ -82,6 +108,8 @@ x = 10
 my_func_global()
 print(x)
 ```
+
+printing 'x' outputs 10 because it was declared as global.
 
 ## Challenges
 
